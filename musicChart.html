@@ -6,12 +6,23 @@
         background-color:#f5d97f;
       }
     </style>
+    <script src="https;//cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body class="backgroundcolor">
     <center>
-      <h1>Open the console</h1>
+      <h1>++My Top Rated Steve Lacy Tracks++</h1>
+      <div id="plot"></div>
     <script>
       console.log("This is from the internal JS");
+      let songNames = ["Out of Me Head","Atomic Vomit","When I"];
+      let streams = ["631783","857765","553205"]
+      let trace = {
+        x: songNames,
+        y: streams.
+          type: 'bar'
+      }
+      let data = [trace];
+      Plotly.newPlot("plot", data)
     </script>
       <a href="index.html">Back to Home Page</a>
     </center>
