@@ -2,19 +2,22 @@
   <head>
     <title>Input Demo</title>
     <style>
-        .colorOne{
-    color: #e3a47f;
-    }
     .backgroundOne{
     background-color: #f5d97f;
     }
     </style>
   </head>
-  <body class="backgroundOne">
+  <body class="backgroundOne" >
     <center>
       <h1>Input Demo</h1>
+      <p>Enter Text: </p>
+      <input type="text" placeholder="Enter Text" id="myText">
+      <button onclick="outputDemo()">Click Here</button>
+      <p id="output">
+        You have not entered any text yet.
+      </p>
       <a href="index.html">Back to Home Page</a>
     </center>
-    
+    <script src="inputDemo.js"></script>
   </body>
 </html>
