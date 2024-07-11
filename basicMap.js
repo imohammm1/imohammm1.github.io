@@ -4,7 +4,7 @@ console.log("JS File was loaded");
 
 let map = L.map("map", {
   center: [35.217665, -80.831473],
-  zoom: 8
+  zoom: 80
 });
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
