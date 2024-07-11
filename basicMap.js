@@ -12,7 +12,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 let marker = L.marker(
-  [35.2176665, -80.831473] {
+  [35.2176665, -80.831473], {
     title: "CPCC Central Campus"
   }
 ).addTo(map);
