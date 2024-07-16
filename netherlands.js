@@ -16,4 +16,6 @@ let circle = L.circle([52.269386, 4.548342], {
     color: '#402e21',
     fillColor: '#9c7356',
     radius: 10000
-}).addTo(map);
+  }
+  ).bindPopup(`<iframe width="280" height="150" src="https://www.youtube.com/embed/wIlf_XtcMXA" title="KEUKENHOF 🇳🇱 AMSTERDAM Drone 4K World&#39;s largest Tulip Fields 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`)
+  .addTo(map);
