@@ -15,5 +15,5 @@ let marker = L.marker(
   [52.1326, 5.2913], {
     title: "The Netherlands"
   }
-  ).bindPopup(`<h2 class="colorOne">Hello from CPCC!</h2><hr><iframe width="280" height="120" src="https://www.youtube.com/embed/3ymn7BxITrA" title="Central Piedmont - Community is Who We Are (:15)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`)
+  ).bindPopup(`<h2 class="colorOne">Welcome to the World of Canals and Windmills!</h2><hr><iframe width="280" height="120" src="https://www.youtube.com/embed/3ymn7BxITrA" title="Central Piedmont - Community is Who We Are (:15)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`)
   .addTo(map);
