@@ -14,6 +14,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 let circle = L.circle([52.269386, 4.548342], {
     color: '#402e21',
     fillColor: '#9c7356',
-    fillOpacity: 0.5,
     radius: 1000
 }).addTo(map);
