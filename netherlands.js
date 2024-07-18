@@ -17,7 +17,7 @@ let circle = L.circle([52.269386, 4.548342], {
     fillColor: '#9c7356',
     radius: 10000
   }
-  ).bindPopup(`<h2>Explore the Wondrous Keukenhof Park in Amsterdam</h2><hr><iframe width="280" height="150" src="https://www.youtube.com/embed/wIlf_XtcMXA" title="KEUKENHOF 🇳🇱 AMSTERDAM Drone 4K World&#39;s largest Tulip Fields 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`)
+  ).bindPopup(`<h2 class="colorOne">Explore the Wondrous Keukenhof Park in Amsterdam</h2 ><hr><iframe width="280" height="150" src="https://www.youtube.com/embed/wIlf_XtcMXA" title="KEUKENHOF 🇳🇱 AMSTERDAM Drone 4K World&#39;s largest Tulip Fields 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`)
   .addTo(map);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
