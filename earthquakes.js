@@ -17,11 +17,16 @@ var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest
 	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 }).addTo(map);
 
-let marker = L.marker(
-  [35.2176665, -80.831473], {
-    title: "CPCC Central Campus"
-  }
-  ).bindPopup(`<h2 class="colorOne">Hello from CPCC!</h2><hr><iframe width="280" height="120" src="https://www.youtube.com/embed/3ymn7BxITrA" title="Central Piedmont - Community is Who We Are (:15)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`)
-  .addTo(map);
-  }
-);
+function onEachFeature(feature, layer)
+      {
+        layer.bindPopup(`<center>
+        <h3>${feature.properties.place}</h3>
+        <hr>
+        <p>${new Date(feature.properties.time)}</p>
+        <p><b>Magnitude</b> ${feature.properties.mag.toFixed(2)}</p>
+        </center>`);
+      }
+
+    let earthquakes = L.geoJSON(data.features, {
+      onEachFeature: onEachFeature
+    }).addTo(map);
