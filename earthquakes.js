@@ -30,3 +30,4 @@ function onEachFeature(feature, layer)
     let earthquakes = L.geoJSON(data.features, {
       onEachFeature: onEachFeature
     }).addTo(map);
+  }
