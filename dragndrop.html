@@ -2,10 +2,39 @@
   <head>
     <title>Drag and Drop</title>
     <style>
-      
+      .backgroundColor{
+        background-color:#f5d97f;
+      }
+      .colorOne{
+        color:#77ad1f;
+      }
+      #div1 {
+      width: 350px;
+      height: 70px;
+      padding: 10px;
+      border: 1px solid #aaaaaa;
+      }
     </style>
+    <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
   </head>
   <body>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
     <center>
       <footer>
         <a href="https://www.youtube.com/watch?v=KaM_M_SqzTw" ><img src="fnfbackground.png" title="click here for fun!!" width="960" height="200"></a>
