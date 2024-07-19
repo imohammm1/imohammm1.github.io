@@ -9,4 +9,8 @@ function outputDemo()
   alert(output);
 
   document.getElementById("output").innerHTML = "You entered: " + output;
+
+  if output = "im stupid"{
+    console.log("youre stupid");
+  }
 }
