@@ -10,7 +10,7 @@ function outputDemo()
 
   document.getElementById("output").innerHTML = "You entered: " + output;
 
-  if output = "im stupid"{
+  if document.getElementById("myText").value = "im stupid"{
     console.log("youre stupid");
   }
 }
