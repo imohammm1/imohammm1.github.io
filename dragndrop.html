@@ -8,11 +8,29 @@
       .colorOne{
         color:#77ad1f;
       }
-      #div1 {
-      width: 350px;
-      height: 70px;
-      padding: 10px;
-      border: 1px solid #aaaaaa;
+       .dropzone {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 50px auto;
+      font-family: Arial, sans-serif;
+      color: #aaa;
+    }
+    .dropzone.dragover {
+      border-color: #333;
+      color: #333;
+    }
+    .image-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .image-container img {
+      max-width: 100%;
+      max-height: 400px;
       }
     </style>
     <script>
@@ -33,7 +51,8 @@ function drop(ev) {
   </head>
   <body>
     <center>
-      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" width="960" height="310"></div>
+      <div class="dropzone" id="dropzone">Drag & Drop your image here</div>
+      <div class="image-container" id="image-container"></div>
       <script src="dragndrop.js"></script>
       <footer>
         <a href="https://www.youtube.com/watch?v=KaM_M_SqzTw" ><img src="fnfbackground.png" title="click here for fun!!" width="960" height="200"></a>
