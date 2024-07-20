@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-const button = document.getElementById('button');
 const fileInput = document.getElementById('fileInput');
-const imageContainer = document.getElementById('imageContainer');
+const imageContainer = document.getElementById('image-container');
 
 fileInput.addEventListener('change', (event) => {
     const file = event.target.files[0];
@@ -10,6 +9,7 @@ fileInput.addEventListener('change', (event) => {
       reader.onload = (e) => {
         const img = document.createElement('img');
         img.src = e.target.result;
+        imageContainer.innerHTML = '';
         imageContainer.appendChild(img);
       };
       reader.readAsDataURL(file);
