@@ -1,3 +1,5 @@
+console.log ("JS File was Loaded")
+
 document.addEventListener('DOMContentLoaded', () => {
 const fileInput = document.getElementById('fileInput');
 const imageContainer = document.getElementById('image-container');
