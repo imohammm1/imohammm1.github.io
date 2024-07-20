@@ -18,7 +18,7 @@
     </style>
   </head>
   <body>
-    <input type="file" id="fileInput" style="visibility:hidden" accept="image/*" >
+    <input type="file" id="fileInput" onchange="readURL(this)" style="visibility:hidden" accept="image/*" >
     <button id="button" onclick="document.getElementById('file').click(); return false;">Click Here to Upload Photo</button>
     <div id="image-container" class="image-container"></div>
     <script src="draganddrop.js"></script>
