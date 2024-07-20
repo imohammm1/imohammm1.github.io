@@ -9,7 +9,7 @@ fileInput.addEventListener('change', (event) => {
       reader.onload = (e) => {
         const img = document.createElement('img');
         img.src = e.target.result;
-        console.log("you chose to display the image:" + 'img')
+        imageContainer.innerHTML = 'you chose to display:' + img;
         imageContainer.innerHTML = '';
         imageContainer.appendChild(img);
       };
