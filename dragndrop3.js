@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
       reader.onload = (e) => {
         const img = document.createElement('img');
         img.src = e.target.result;
-        imageContainer.innerHTML = 'img';
         imageContainer.appendChild(img);
       };
       reader.readAsDataURL(file);
