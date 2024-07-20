@@ -14,10 +14,12 @@
       {
         color: transparent;
       }
-      
+      .background{
+        background-color: #33221d;
+      }
     </style>
   </head>
-  <body>
+  <body class="background">
     <input type="file" id="fileInput" onchange="readURL(this)" accept="image/*" >
     <button id="button" onclick="document.getElementById('file').click(); return false;" style="visibility:hidden">Click Here to Upload Photo</button>
     <div id="image-container" class="image-container"></div>
