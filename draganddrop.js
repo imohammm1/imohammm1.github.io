@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const button = document.getElementById('button');
 const fileInput = document.getElementById('fileInput');
 const imageContainer = document.getElementById('imageContainer');
@@ -15,4 +16,5 @@ fileInput.addEventListener('change', (event) => {
     } else {
       alert('Please select an image file.');
     }
+});
 });
